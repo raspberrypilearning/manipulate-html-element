@@ -3,7 +3,7 @@ In JavaScript, you can view and change the inner text content of an HTML element
 These include:
 + `.innerHTML` this property finds and returns the text content as well as the CSS styling, attributes and HTML tags of an element.
 
-For example: 
+In this example the HTML element has been given the attribute `id="myDiv"`.
 
 --- code ---
 ---
@@ -15,8 +15,10 @@ line_numbers: true
       <div id="myDiv">
         <p>This is the original content.</p>
       </div>
-      
+
 --- /code ---
+
+This can then be manipulated using the DOM property including all the CSS styling and HTML tags.
 
 --- code ---
 ---
@@ -25,8 +27,8 @@ filename: script.js
 line_numbers: true
 ---
      
-     // Update Copyright Year function 
-     document.getElementById('myDiv').innerHTML = "<p>New content with <strong>HTML</strong> tags!</p>";
+     // Update HTML element content 
+     document.querySelector(#myDiv).innerHTML = "<p>New content with <strong>HTML</strong> tags!</p>";
     
 --- /code ---
 
@@ -52,8 +54,8 @@ filename: script.js
 line_numbers: true
 ---
      
-     // Update Copyright Year function 
-    document.getElementById('myDiv').innerText = "New text content without HTML tags!";
+     // Update HTML element content
+    document.querySelector(#myDiv).innerText = "New text content without HTML tags!";
     
 --- /code ---
 
@@ -79,7 +81,7 @@ filename: script.js
 line_numbers: true
 ---
      
-     // Update Copyright Year function 
-    document.getElementById('myDiv').textContent = "New text content with HTML tags <strong>preserved</strong>!";
+     // Update HTML element content
+    document.querySelector(#myDiv).textContent = "New text content with HTML tags <strong>preserved</strong>!";
     
 --- /code ---
