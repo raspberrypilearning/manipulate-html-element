@@ -32,6 +32,7 @@ line_numbers: true
     
 --- /code ---
 
+
 + `.innerText` this property finds and returns the text content as well as the CSS styling but not the tags and attributes of an element.
 
 --- code ---
@@ -58,6 +59,7 @@ line_numbers: true
     document.querySelector(#myDiv).innerText = "New text content without HTML tags!";
     
 --- /code ---
+
 
 + `.textContent` this property returns only the text content of an HTML element.
 
