@@ -9,7 +9,7 @@ In this example the HTML element has been given the attribute `id="myDiv"`.
 ---
 language: html
 filename: index.html
-line_numbers: true
+line_numbers: 
 ---
 
       <div id="myDiv">
@@ -24,7 +24,7 @@ This can then be manipulated using the DOM property including all the CSS stylin
 ---
 language: js
 filename: script.js
-line_numbers: true
+line_numbers: 
 ---
      
      // Update HTML element content 
@@ -52,7 +52,7 @@ line_numbers: true
 ---
 language: js
 filename: script.js
-line_numbers: true
+line_numbers: 
 ---
      
      // Update HTML element content
@@ -80,7 +80,7 @@ line_numbers: true
 ---
 language: js
 filename: script.js
-line_numbers: true
+line_numbers: 
 ---
      
      // Update HTML element content
