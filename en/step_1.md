@@ -1,9 +1,10 @@
-In JavaScript, you can view and change the inner text content of an HTML element using various DOM properties.
+In JavaScript, you can view and change the content of an HTML element using various DOM properties.
 
-These include:
-+ `.innerHTML` this property finds and returns the text content as well as the CSS styling, attributes and HTML tags of an element.
+### .innerHTML
 
-In this example the HTML element has been given the attribute `id="myDiv"`.
+`.innerHTML` refers to the text content as well as the CSS styling, attributes and HTML tags of an element.
+
+In this example the HTML element has the attribute `id="myDiv"`.
 
 --- code ---
 ---
@@ -12,78 +13,80 @@ filename: index.html
 line_numbers: 
 ---
 
-      <div id="myDiv">
-        <p>This is the original content.</p>
-      </div>
+<div id="myDiv">
+<p>This is the original content.</p>
+</div>
 
 --- /code ---
 
-This can then be manipulated using the DOM property including all the CSS styling and HTML tags.
+The `HTML` content of this element can be changed.
 
 --- code ---
 ---
 language: js
-filename: script.js
+filename: scripts.js
 line_numbers: 
 ---
      
-     // Update HTML element content 
-     document.querySelector(#myDiv).innerHTML = "<p>New content with <strong>HTML</strong> tags!</p>";
+// Update HTML element content 
+document.querySelector(#myDiv).innerHTML = "<p>New content with <strong>HTML</strong> tags!</p>";
     
 --- /code ---
 
+### .innerText 
 
-+ `.innerText` this property finds and returns the text content as well as the CSS styling but not the tags and attributes of an element.
+`.innerText` refers to the text content as well as the CSS styling but **not** the tags and attributes of an element.
 
 --- code ---
 ---
 language: html
 filename: index.html
-line_numbers: true
+line_numbers: 
 ---
 
-    <div id="myDiv">
-        <p>This is the original content.</p>
-    </div>
+<div id="myDiv">
+  <p>This is the original content.</p>
+</div>
 
 --- /code ---
 
 --- code ---
 ---
 language: js
-filename: script.js
+filename: scripts.js
 line_numbers: 
 ---
      
-     // Update HTML element content
-    document.querySelector(#myDiv).innerText = "New text content without HTML tags!";
+// Update HTML element content
+document.querySelector(#myDiv).innerText = "New text content without HTML tags!";
     
 --- /code ---
 
+### .textContent
 
-+ `.textContent` this property returns only the text content of an HTML element.
+`.textContent` refers to only the text content of an HTML element.
 
 --- code ---
 ---
 language: html
 filename: index.html
-line_numbers: true
+line_numbers: 
 ---
 
-      <div id="myDiv">
-        <p>This is the original content.</p>
-    </div>
+<div id="myDiv">
+  <p>This is the original content.</p>
+</div>
 
 --- /code ---
 
 --- code ---
 ---
 language: js
-filename: script.js
+filename: scripts.js
 line_numbers: 
 ---
      
-     // Update HTML element content
-    document.querySelector(#myDiv).textContent = "New text content with HTML tags <strong>preserved</strong>!";
+// Update HTML element content
+document.querySelector(#myDiv).textContent = "New text content with HTML tags <strong>preserved</strong>!";
     
 --- /code ---
