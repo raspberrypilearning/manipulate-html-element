@@ -2,9 +2,9 @@ In JavaScript, you can view and change the content of an HTML element using vari
 
 ### .innerHTML
 
-`.innerHTML` refers to the text content as well as the CSS styling, attributes and HTML tags of an element.
+`.innerHTML` refers to the text content as well as the CSS styling, attributes, and HTML tags of an element.
 
-In this example the HTML element has the attribute `id="myDiv"`.
+In this example, the HTML element has the attribute `id="myDiv"`.
 
 --- code ---
 ---
