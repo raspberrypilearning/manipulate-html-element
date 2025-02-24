@@ -1,10 +1,10 @@
-In JavaScript, you can view and change the content of an HTML element using various DOM properties.
+In JavaScript kun je de inhoud van een HTML-element bekijken en wijzigen met behulp van verschillende DOM-eigenschappen.
 
 ### .innerHTML
 
-`.innerHTML` refers to the text content as well as the CSS styling, attributes and HTML tags of an element.
+`.innerHTML` verwijst naar de tekstinhoud evenals de CSS styling, attributen en HTML tags van een element.
 
-In this example the HTML element has the attribute `id="myDiv"`.
+In dit voorbeeld heeft het HTML-element het kenmerk `id="myDiv"`.
 
 ## --- code ---
 
@@ -14,12 +14,12 @@ line_numbers:
 --------------------------------------------------
 
 <div id="myDiv">
-<p>This is the original content.</p>
+<p>Dit is de originele inhoud.</p>
 </div>
 
 \--- /code ---
 
-The `HTML` content of this element can be changed.
+De `HTML`-inhoud van dit element kan worden gewijzigd.
 
 ## --- code ---
 
@@ -28,14 +28,14 @@ filename: scripts.js
 line_numbers:
 --------------------------------------------------
 
-// Update HTML element content
-document.querySelector(#myDiv).innerHTML = "<p>New content with <strong>HTML</strong> tags!</p>";
+// Werk de inhoud van het HTML-element bij
+document.querySelector(#myDiv).innerHTML = "<p>Nieuwe inhoud met <strong>HTML</strong> tags!</p>";
 
 \--- /code ---
 
 ### .innerText
 
-`.innerText` refers to the text content as well as the CSS styling but **not** the tags and attributes of an element.
+`.innerText` verwijst zowel naar de tekstinhoud als naar de CSS-stijl, maar **niet** naar de tags en attributen van een element.
 
 ## --- code ---
 
@@ -45,7 +45,7 @@ line_numbers:
 --------------------------------------------------
 
 <div id="myDiv">
-  <p>This is the original content.</p>
+  <p>Dit is de originele inhoud.</p>
 </div>
 
 \--- /code ---
@@ -57,14 +57,14 @@ filename: scripts.js
 line_numbers:
 --------------------------------------------------
 
-// Update HTML element content
-document.querySelector(#myDiv).innerText = "New text content without HTML tags!";
+// Update HTML element inhoud
+document.querySelector(#myDiv).innerText = "Nieuwe tekst inhoud zonder HTML tags!";
 
 \--- /code ---
 
 ### .textContent
 
-`.textContent` refers to only the text content of an HTML element.
+`.textContent` verwijst alleen naar de tekstinhoud van een HTML-element.
 
 ## --- code ---
 
@@ -74,7 +74,7 @@ line_numbers:
 --------------------------------------------------
 
 <div id="myDiv">
-  <p>This is the original content.</p>
+  <p>Dit is de originele inhoud.</p>
 </div>
 
 \--- /code ---
@@ -86,7 +86,7 @@ filename: scripts.js
 line_numbers:
 --------------------------------------------------
 
-// Update HTML element content
-document.querySelector(#myDiv).textContent = "New text content with HTML tags <strong>preserved</strong>!";
+// Update HTML element inhoud
+document.querySelector(#myDiv).textContent = "Nieuwe tekst inhoud met HTML tags <strong>behouden</strong>!";
 
 \--- /code ---
