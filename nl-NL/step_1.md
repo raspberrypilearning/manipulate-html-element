@@ -2,9 +2,9 @@ In JavaScript kun je de inhoud van een HTML-element bekijken en wijzigen met beh
 
 ### .innerHTML
 
-`.innerHTML` verwijst naar de tekstinhoud evenals de CSS styling, attributen en HTML tags van een element.
+`.innerHTML` refers to the text content as well as the CSS styling, attributes, and HTML tags of an element.
 
-In dit voorbeeld heeft het HTML-element het kenmerk `id="myDiv"`.
+In this example, the HTML element has the attribute `id="myDiv"`.
 
 ## --- code ---
 
