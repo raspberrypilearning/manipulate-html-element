@@ -2,9 +2,9 @@ En JavaScript, tu peux voir et modifier le contenu d'un élément HTML en utilis
 
 ### .innerHTML
 
-`.innerHTML` fait référence au contenu du texte ainsi qu'au style CSS, aux attributs et aux balises HTML d'un élément.
+`.innerHTML` refers to the text content as well as the CSS styling, attributes, and HTML tags of an element.
 
-Dans cet exemple, l'élément HTML a l'attribut `id="myDiv"`.
+In this example, the HTML element has the attribute `id="myDiv"`.
 
 ## --- code ---
 
